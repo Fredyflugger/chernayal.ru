@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap");
+header {
+  background-color: #333333;
+  color: white;
+  padding: 0;
+}
+
+.portfolioBack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 71px;
+  width: 100%;
+  background-color: #3D3D3D;
+  color: white;
+}
+
+.portfolioBack:hover {
+  background-color: #4B4B4B;
+}
+
+.portfolioBack img {
+  margin: auto 33px auto 44px;
+  width: 4px;
+  height: 8px;
+}
+
+.portfolioBack span {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 57px;
+}
+
+article h2 {
+  margin: 33px 0 18px 0;
+}
+
+article p {
+  max-width: 918px;
+  text-align: center;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1110px;
+  width: 100%;
+}
+
+.gallery img {
+  margin-bottom: 30px;
+}
+
+button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 5px 0px 0px 5px;
+  position: fixed;
+  bottom: 33px;
+  right: 0;
+}
+
+button img {
+  width: 12px;
+  height: 6px;
+  color: white;
+}
+
+@media (max-width: 698px) {
+  .portfolioBack {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .portfolioBack img {
+    margin: auto 33px auto 0;
+  }
+  .gallery {
+    padding: 13px;
+  }
+  .gallery img {
+    width: 100%;
+    margin-bottom: 13px;
+  }
+}
+/*# sourceMappingURL=project.css.map */

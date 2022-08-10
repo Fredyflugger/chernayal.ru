@@ -1,0 +1,39 @@
+@import "variables";
+
+body {
+    background-color: #F3F3F3;
+}
+
+main, header {
+    background-color: #fff;
+}
+
+.contacts article {
+    margin-bottom: 14px;
+    h2 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 32px;
+    }
+    p {
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+@media (max-width: 698px) {
+    main {
+        padding: 13px;
+        text-align: center;
+        footer {
+            .logos {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .contactMe article h2 {
+        margin-top: 24px;
+    }
+}

@@ -1,0 +1,49 @@
+@import "variables";
+
+body {
+    background-color: #F3F3F3;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(0, 300px));
+    grid-gap: 33px;
+    max-width: 966px;
+    width: fit-content;
+    padding: 33px;
+    align-content: center;
+    a {
+        max-width: 300px;
+        width: 100%;
+        max-height: 399px;
+        height: 100%;
+        img {
+            cursor: pointer;
+            &:hover {
+                filter: grayscale(100%);
+            }
+        }
+    }
+    a {
+        display: block;
+        margin: auto;
+    }
+}
+
+header {
+    background-color: #fff;
+    padding-bottom: 33px;
+}
+
+@media (max-width: 1031px) {
+    .portfolio {
+        max-width: 633px;
+    }
+}
+
+@media (max-width: 698px) {
+    .portfolio {
+        max-width: 300px;
+        padding: 13px;
+    }
+}

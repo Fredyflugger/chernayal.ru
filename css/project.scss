@@ -1,0 +1,89 @@
+@import "variables";
+
+header {
+    background-color: $main-gray;
+    color: white;
+    padding: 0;
+}
+
+.portfolioBack {
+    display: flex;
+    align-items: center;
+    height: 71px;
+    width: 100%;
+    background-color: #3D3D3D;
+    color: white;
+    &:hover {
+        background-color: #4B4B4B;
+    }
+    img {
+        margin: auto 33px auto 44px;
+        width: 4px;
+        height: 8px;
+    }
+    span {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 57px;
+    h2 {
+        margin: 33px 0 18px 0;
+    }
+    p {
+        max-width: 918px;
+        text-align: center;
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1110px;
+    width: 100%;
+    img {
+        margin-bottom: 30px;
+    }
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 37px;
+    height: 37px;
+    border-radius: 5px 0px 0px 5px;
+    position: fixed;
+    bottom: 33px;
+    right: 0;
+    img {
+        width: 12px;
+        height: 6px;
+        color: white;
+    }
+}
+
+@media (max-width: 698px) {
+    .portfolioBack {
+        justify-content: center;
+        img {
+            margin: auto 33px auto 0;
+        }
+    }
+    .gallery {
+        padding: 13px;
+        img {
+            width: 100%;
+            margin-bottom: 13px;
+        }
+    }
+}

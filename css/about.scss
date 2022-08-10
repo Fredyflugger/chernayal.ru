@@ -1,0 +1,122 @@
+@import "variables";
+
+.aboutMe {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 33px;
+    padding: 33px;
+    .photoWrap {
+        grid-row-start: span 2;
+    }
+    .photo {
+        max-width: 380px;
+        max-height: 498px;
+        width: 100%;
+        height: auto;
+    }
+    article {
+        text-align: left;
+        h1 {
+            margin-bottom: 15px;
+        }
+        p {
+            max-width: 583px;
+        }
+    }
+}
+
+.feedback {
+    h2 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 26px;
+        text-transform: uppercase;
+        margin-left: 65px;
+        margin-bottom: 33px;
+    }
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 33px;
+    }
+}
+
+.slider {
+    display: flex;
+    img {
+        margin: 0;
+        cursor: pointer;
+        filter: invert(13%) sepia(6%) saturate(3%) hue-rotate(314deg) brightness(98%) contrast(81%);
+        &:hover {
+            filter: invert(97%) sepia(1%) saturate(0%) hue-rotate(188deg) brightness(92%) contrast(85%);
+            transition: all 0.4s ease-out;
+        }
+    }
+    p {
+        width: 100%;
+        max-width: 513px;
+    }
+    div {
+        padding: 0 33px 0 33px;
+    }
+}
+
+@media (max-width: 998px) {
+    .aboutMe {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        .photoWrap {
+            grid-row-start: span 1;
+        }
+        .feedback {
+           grid-column-start: span 2; 
+        }
+    }
+}
+
+@media (max-width: 698px) {
+    .aboutMe {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        padding: 0;
+        grid-gap: 13px;
+        text-align: center;
+        .photoWrap {
+            grid-row-start: span 1;
+            width: 100%;
+            max-width: 100% !important;
+            .photo {
+                aspect-ratio: 3/2;
+                width: 100%;
+                max-width: 100%;
+                height: inherit;
+                object-fit: cover;
+            }
+        }
+        .feedback {
+           grid-column-start: span 1;
+           padding: 13px;
+        }
+        article {
+            text-align: center;
+            padding: 13px;
+        }
+    }
+    .feedback {
+        h2 {
+            margin-left: 0;
+        }
+    }
+    .slider {
+        div {
+            padding: 0 13px 0 13px;
+        }
+        p {
+            margin-bottom: 13px;
+        }
+    }
+}

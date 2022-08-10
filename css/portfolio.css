@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap");
+body {
+  background-color: #F3F3F3;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(0, 300px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(0, 300px));
+  grid-gap: 33px;
+  max-width: 966px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 33px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.portfolio a {
+  max-width: 300px;
+  width: 100%;
+  max-height: 399px;
+  height: 100%;
+}
+
+.portfolio a img {
+  cursor: pointer;
+}
+
+.portfolio a img:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.portfolio a {
+  display: block;
+  margin: auto;
+}
+
+header {
+  background-color: #fff;
+  padding-bottom: 33px;
+}
+
+@media (max-width: 1031px) {
+  .portfolio {
+    max-width: 633px;
+  }
+}
+
+@media (max-width: 698px) {
+  .portfolio {
+    max-width: 300px;
+    padding: 13px;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */
